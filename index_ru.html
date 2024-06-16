@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эволюционные изменения гена TP53</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            flex-wrap: wrap;
+        }
+        header .logos {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            border: 2px solid #fff;
+            padding: 0.5em;
+            border-radius: 10px;
+            background-color: #005f8d;
+        }
+        header .logos img {
+            max-height: 50px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
+        header .buttons {
+            display: flex;
+            gap: 1em;
+        }
+        header .buttons a {
+            background-color: #fff;
+            color: #0077b6;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        header .buttons a:hover {
+            background-color: #005f8d;
+            color: #fff;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        h2 {
+            color: #0077b6;
+        }
+        .methods, .results, .team, .contact {
+            margin-bottom: 2em;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 0.5em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #0077b6;
+        }
+        .gene-info {
+            background-color: #e0f7fa;
+            padding: 1em;
+            margin-bottom: 2em;
+            border-left: 5px solid #0077b6;
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .image {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 1em;
+            border: 1px солидный #ddd;
+            padding: 0.5em;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image p {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .contact-button {
+            display: block;
+            width: 200px;
+            margin: 2em auto;
+            padding: 1em;
+            text-align: center;
+            background-color: #0077b6;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #005f8d;
+        }
+        footer {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            .images-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logos">
+        <img src="images/heidelberg_logo.png" alt="Логотип Университета Хайдельберг">
+        <img src="images/zmbh_logo.jpeg" alt="Логотип Хайдельбергского ZMBH">
+    </div>
+    <h1>Эволюционные изменения гена TP53</h1>
+    <div class="buttons">
+        <a href="index.html">English</a>
+        <a href="#contact">Контакты</a>
+        <a href="https://www.nature.com/articles/s41568-020-0262-1" target="_blank">Научный референс</a>
+    </div>
+</header>
+
+<div class="container clearfix">
+    <section class="objective">
+        <h2 class="section-title">Цель проекта</h2>
+        <p>Изучение гена TP53 у различных видов животных с целью выявления сходств и различий в нуклеотидной последовательности, подтверждения высокой степени консервации гена TP53 на протяжении эволюции, а также анализа корреляции между мутациями гена TP53 и частотой опухолевых заболеваний у различных видов животных.</p>
+    </section>
+
+    <section class="gene-info clearfix">
+        <h2 class="section-title">Информация о гене TP53</h2>
+        <div class="images-container">
+            <div class="image">
+                <img src="images/p53_structure.png" alt="Структура белка p53">
+                <p>Структура белка p53. Источник: <a href="https://commons.wikimedia.org/wiki/File:P53.jpg">Wikimedia Commons</a></p>
+            </div>
+            <div class="image">
+                <img src="images/dna_animation.gif" alt="Анимация молекулы ДНК">
+                <p>Анимация молекулы ДНК. Источник: <a href="https://elements.envato.com/3d-rendered-loopable-animation-of-rotating-dna-glo-T85ULXU">Envato Elements</a></p>
+            </div>
+        </div>
+        <p>Ген TP53, известный также как "страж генома", играет ключевую роль в регуляции клеточного цикла и предотвращении опухолевых заболеваний. Этот ген кодирует белок p53, который участвует в подавлении опухолей, восстанавливая поврежденную ДНК или инициируя апоптоз (программируемую клеточную смерть) при необратимом повреждении клеток. Мутации в гене TP53 часто связаны с различными типами рака, что делает его важным объектом исследований в области онкологии и генетики.</p>
+    </section>
+
+    <section class="methods clearfix">
+        <h2 class="section-title">Методы исследования</h2>
+        <ul>
+            <li><strong>Анализ филогенетических древ:</strong> Создание и анализ эволюционных деревьев для различных видов животных.</li>
+            <li><strong>Секвенирование геномов:</strong> Получение данных о нуклеотидной последовательности гена TP53 у различных видов.</li>
+            <li><strong>Сравнительный анализ:</strong> Использование инструмента BLAST для сравнения последовательностей гена TP53.</li>
+            <li><strong><i>In silico</i> анализ:</strong> Исследование структуры гена, включая интроны и экзоны.</li>
+        </ul>
+    </section>
+
+    <section class="results clearfix">
+        <h2 class="section-title">Ожидаемые результаты</h2>
+        <p>Наш проект находится на этапе запуска, и мы ожидаем:</p>
+        <ul>
+            <li>Подтверждение высокой степени консервации гена TP53 среди различных видов животных.</li>
+            <li>Идентификацию ключевых различий в нуклеотидной последовательности гена TP53.</li>
+            <li>Обнаружение связи между мутациями гена TP53 и частотой опухолевых заболеваний у разных видов.</li>
+        </ul>
+    </section>
+
+    <section class="team clearfix">
+        <h2 class="section-title">О проекте</h2>
+        <p>Изучение гена TP53 в рамках молекулярной биологии и генетики помогает понять его эволюцию и значимость для здоровья различных видов животных. Основные цели включают:</p>
+        <ul>
+            <li>Определение механизмов консервации и изменения гена TP53 на протяжении эволюции.</li>
+            <li>Изучение роли мутаций TP53 в возникновении опухолевых заболеваний.</li>
+            <li>Исследование связи между структурой и функцией гена TP53 и его влиянием на здоровье животных.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact clearfix">
+        <h2 class="section-title">Контакты</h2>
+        <p><strong>Евгений Качкин</strong></p>
+        <p>Университет Хайдельберг, факультет Бионаук</p>
+        <p><a href="mailto:ev.m.kachkin@gmail.com">ev.m.kachkin@gmail.com</a></p>
+        <p>Ссылка на научный референс: <a href="https://www.nature.com/articles/s41568-020-0262-1">Nature Article</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Эволюционные изменения TP53.</p>
+</footer>
+
+</body>
+</html>
