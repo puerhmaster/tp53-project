@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolutionary Changes in the TP53 Gene</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #0077b6;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        header .logos {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            border: 2px solid #fff;
+            padding: 0.5em;
+            border-radius: 10px;
+            background-color: #005f8d;
+        }
+        header .logos img {
+            max-height: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
+        header .buttons {
+            display: flex;
+            gap: 1em;
+        }
+        header .buttons a {
+            background-color: #fff;
+            color: #0077b6;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        header .buttons a:hover {
+            background-color: #005f8d;
+            color: #fff;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        h2 {
+            color: #0077b6;
+        }
+        .methods, .results, .team, .contact {
+            margin-bottom: 2em;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 0.5em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #0077b6;
+        }
+        .gene-info {
+            background-color: #e0f7fa;
+            padding: 1em;
+            margin-bottom: 2em;
+            border-left: 5px solid #0077b6;
+        }
+        .images-container {
+            float: right;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+        .image {
+            width: 45%;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            padding: 0.5em;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image p {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .contact-button {
+            display: block;
+            width: 200px;
+            margin: 2em auto;
+            padding: 1em;
+            text-align: center;
+            background-color: #0077b6;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-button:hover {
+            background-color: #005f8d;
+        }
+        footer {
+            background-color: #0077b6;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logos">
+        <img src="images/heidelberg_logo.png" alt="Heidelberg University Logo">
+        <img src="images/zmbh_logo.jpeg" alt="ZMBH Heidelberg Logo">
+    </div>
+    <h1>Evolutionary Changes in the TP53 Gene</h1>
+    <div class="buttons">
+        <a href="#contact">Contact</a>
+        <a href="https://www.nature.com/articles/s41568-020-0262-1" target="_blank">Scientific Reference</a>
+    </div>
+</header>
+
+<div class="container clearfix">
+    <section class="objective">
+        <h2 class="section-title">Project Objective</h2>
+        <p>Study of the TP53 gene in various animal species to identify similarities and differences in nucleotide sequences, confirm the high degree of conservation of the TP53 gene throughout evolution, and analyze the correlation between TP53 gene mutations and the incidence of tumor diseases in various animal species.</p>
+    </section>
+
+    <section class="gene-info clearfix">
+        <h2 class="section-title">Information about the TP53 Gene</h2>
+        <div class="images-container">
+            <div class="image">
+                <img src="images/p53_structure.png" alt="Structure of p53 Protein">
+                <p>Structure of p53 Protein. Source: <a href="https://commons.wikimedia.org/wiki/File:P53.jpg">Wikimedia Commons</a></p>
+            </div>
+            <div class="image">
+                <img src="images/dna_animation.gif" alt="DNA Molecule Animation">
+                <p>DNA Molecule Animation. Source: <a href="https://elements.envato.com/3d-rendered-loopable-animation-of-rotating-dna-glo-T85ULXU">Envato Elements</a></p>
+            </div>
+        </div>
+        <p>The TP53 gene, also known as the "guardian of the genome," plays a key role in regulating the cell cycle and preventing tumor diseases. This gene encodes the p53 protein, which is involved in tumor suppression by repairing damaged DNA or initiating apoptosis (programmed cell death) when cell damage is irreparable. Mutations in the TP53 gene are often associated with various types of cancer, making it an important subject of research in oncology and genetics.</p>
+    </section>
+
+    <section class="methods clearfix">
+        <h2 class="section-title">Research Methods</h2>
+        <ul>
+            <li><strong>Phylogenetic Analysis:</strong> Creating and analyzing evolutionary trees for various animal species.</li>
+            <li><strong>Genome Sequencing:</strong> Obtaining nucleotide sequence data of the TP53 gene in various species.</li>
+            <li><strong>Comparative Analysis:</strong> Using the BLAST tool to compare TP53 gene sequences.</li>
+            <li><strong><i>In silico</i> Analysis:</strong> Studying the structure of the gene, including introns and exons.</li>
+        </ul>
+    </section>
+
+    <section class="results clearfix">
+        <h2 class="section-title">Expected Results</h2>
+        <p>Our project is in the launch phase, and we expect:</p>
+        <ul>
+            <li>Confirmation of the high degree of conservation of the TP53 gene among various animal species.</li>
+            <li>Identification of key differences in the nucleotide sequence of the TP53 gene.</li>
+            <li>Detection of the relationship between TP53 gene mutations and the incidence of tumor diseases in different species.</li>
+        </ul>
+    </section>
+
+    <section class="team clearfix">
+        <h2 class="section-title">About the Project</h2>
+        <p>The study of the TP53 gene in the field of molecular biology and genetics helps to understand its evolution and significance for the health of various animal species. The main objectives include:</p>
+        <ul>
+            <li>Determining the mechanisms of conservation and change of the TP53 gene over evolution.</li>
+            <li>Studying the role of TP53 mutations in the development of tumor diseases.</li>
+            <li>Investigating the relationship between the structure and function of the TP53 gene and its impact on animal health.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact clearfix">
+        <h2 class="section-title">Contact</h2>
+        <p><strong>Evgeny Kachkin</strong></p>
+        <p>Heidelberg University, Faculty of Biosciences</p>
+        <p><a href="mailto:ev.m.kachkin@gmail.com">ev.m.kachkin@gmail.com</a></p>
+        <p>Link to the scientific reference: <a href="https://www.nature.com/articles/s41568-020-0262-1">Nature Article</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Evolutionary Changes in TP53.</p>
+</footer>
+
+</body>
+</html>
