@@ -38,7 +38,7 @@
             background-color: #005f8d;
         }
         header .logos img {
-            max-height: 50px;
+            max-height: 60px;
         }
         header h1 {
             font-size: 2em;
@@ -107,7 +107,7 @@
             width: 100%;
             max-width: 200px;
             margin-bottom: 1em;
-            border: 1px солидный #ddd;
+            border: 1px solid #ddd;
             padding: 0.5em;
             background-color: #f9f9f9;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -180,6 +180,7 @@
     <h1>Эволюционные изменения гена TP53</h1>
     <div class="buttons">
         <a href="index.html">English</a>
+        <a href="index_de.html">Deutsch</a>
         <a href="#contact">Контакты</a>
         <a href="https://www.nature.com/articles/s41568-020-0262-1" target="_blank">Научный референс</a>
     </div>
@@ -242,6 +243,21 @@
         <p>Университет Хайдельберг, факультет Бионаук</p>
         <p><a href="mailto:ev.m.kachkin@gmail.com">ev.m.kachkin@gmail.com</a></p>
         <p>Ссылка на научный референс: <a href="https://www.nature.com/articles/s41568-020-0262-1">Nature Article</a></p>
+    </section>
+
+    <section id="feedback" class="contact clearfix">
+        <h2 class="section-title">Форма обратной связи</h2>
+        <form>
+            <label for="name">ФИО:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Эл. почта:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Номер телефона:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="message">Вопрос:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
     </section>
 </div>
 
